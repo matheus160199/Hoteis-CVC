@@ -1,4 +1,4 @@
-package br.com.cvc.hoteis;
+package br.com.cvc.hotels;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

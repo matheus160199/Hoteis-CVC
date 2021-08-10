@@ -1,4 +1,4 @@
-package br.com.cvc.hoteis;
+package br.com.cvc.hotels;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

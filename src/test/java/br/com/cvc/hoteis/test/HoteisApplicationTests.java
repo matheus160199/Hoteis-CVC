@@ -1,10 +1,10 @@
-package br.com.cvc.hoteis;
+package br.com.cvc.hoteis.test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HoteisApplicationTests {
+class HotelsApplicationTests {
 
 	@Test
 	void contextLoads() {
