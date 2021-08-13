@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AppContext implements ApplicationContextAware{
 
-private static ApplicationContext contexto;
+private static ApplicationContext context;
 	
 	@Value("UTF-8")
 	private String charsetName;
@@ -21,7 +21,7 @@ private static ApplicationContext contexto;
 
 	@Override
 	public void setApplicationContext(ApplicationContext appContext) throws BeansException {
-		contexto = appContext;
+		context = appContext;
 	}
 
 	@Bean
@@ -30,7 +30,7 @@ private static ApplicationContext contexto;
 	}
 	
 	public static ApplicationContext getApplicationContext() {
-		return contexto;
+		return context;
 	}
 
 }

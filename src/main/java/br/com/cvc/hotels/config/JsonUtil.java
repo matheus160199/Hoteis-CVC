@@ -1,7 +1,6 @@
 package br.com.cvc.hotels.config;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -28,7 +27,6 @@ public abstract class JsonUtil {
 
 	private static Gson createGson() {
 		return new GsonBuilder().excludeFieldsWithoutExposeAnnotation()
-			 	 .registerTypeAdapter(LocalDateTime.class, new DateTimeAdapter())
 				 .registerTypeAdapter(LocalDate.class, new DateAdapter())
 				 .setPrettyPrinting()
 				 .setDateFormat("dd/MM/yyyy")
@@ -36,7 +34,6 @@ public abstract class JsonUtil {
 	}
 	public static GsonBuilder createGsonBuilder() {
 		return new GsonBuilder().excludeFieldsWithoutExposeAnnotation()
-				 	 .registerTypeAdapter(LocalDateTime.class, new DateTimeAdapter())
 					 .registerTypeAdapter(LocalDate.class, new DateAdapter())
 					 .setDateFormat("dd/MM/yyyy")
 					 .setPrettyPrinting();

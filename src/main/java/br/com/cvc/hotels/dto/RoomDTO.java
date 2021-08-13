@@ -17,4 +17,12 @@ public class RoomDTO {
 	
 	@Expose
 	private PriceDTO price;
+	
+	public double getAdultPrice() {
+		return this.getPrice().getAdult();
+	}
+	
+	public double getChildPrice() {
+		return this.getPrice().getChild();
+	}
 }

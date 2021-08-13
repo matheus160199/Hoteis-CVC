@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class PedidoOrcamentoDTO {
+public class QuotationOrderDTO {
 	
 	@Expose
 	private LocalDate checkInDate;

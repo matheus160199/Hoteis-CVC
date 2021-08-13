@@ -6,13 +6,13 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 
 import br.com.cvc.hotels.dto.HotelDTO;
-import br.com.cvc.hotels.dto.PedidoOrcamentoDTO;
+import br.com.cvc.hotels.dto.QuotationOrderDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Orcamento {
+public class Quotation {
 
 	@Expose
 	private int id;
@@ -26,14 +26,14 @@ public class Orcamento {
 	@Expose
 	private List<Room> rooms = new ArrayList<>();
 	
-	public Orcamento() {}
+	public Quotation() {}
 	
-	public Orcamento(final HotelDTO hotelDTO, final PedidoOrcamentoDTO pedidoOrcamentoDTO) {
-		this.id = hotelDTO.getId();
-		this.city = hotelDTO.getCityName();
-		this.name = hotelDTO.getName();
-		hotelDTO.getRooms().forEach(r -> {
-			this.rooms.add(new Room(r, pedidoOrcamentoDTO));
+	public Quotation(final HotelDTO hotel, final QuotationOrderDTO quotation) {
+		this.id = hotel.getId();
+		this.city = hotel.getCityName();
+		this.name = hotel.getName();
+		hotel.getRooms().forEach(r -> {
+			this.rooms.add(new Room(r, quotation));
 		});
 	}
 }
