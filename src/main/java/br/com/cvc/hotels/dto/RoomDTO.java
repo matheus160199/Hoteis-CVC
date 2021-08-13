@@ -7,13 +7,13 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class QuartoDTO {
+public class RoomDTO {
 
 	@Expose
 	private int roomID;
 	
 	@Expose
-	private String category;
+	private String categoryName;
 	
 	@Expose
 	private PriceDTO price;

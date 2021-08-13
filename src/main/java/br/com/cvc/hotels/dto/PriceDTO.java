@@ -10,8 +10,8 @@ import lombok.Data;
 public class PriceDTO {
 
 	@Expose
-	private int adult;
+	private double adult;
 	
 	@Expose
-	private int child;
+	private double child;
 }

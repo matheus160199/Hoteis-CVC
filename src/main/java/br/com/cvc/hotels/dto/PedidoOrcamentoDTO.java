@@ -9,10 +9,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class OrcamentoDTO {
-	
-	@Expose
-	private int cityId;
+public class PedidoOrcamentoDTO {
 	
 	@Expose
 	private LocalDate checkInDate;

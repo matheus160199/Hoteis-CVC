@@ -24,5 +24,5 @@ public class HotelDTO {
 	private String cityName;
 	
 	@Expose
-	private List<QuartoDTO> rooms;
+	private List<RoomDTO> rooms;
 }
