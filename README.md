@@ -7,6 +7,9 @@ API para o cálculo de cotações dos hotéis retornados pelo broker da CVC. Ond
 - Filtros para validação de dados vindos do Front-end
 
 ## Instruções para teste
+
+Foram criados dois endpoints, com o mesmo corpo de requisição.
+
 #### Corpo das requisições:
 ```
 {
