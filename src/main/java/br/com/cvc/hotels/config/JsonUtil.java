@@ -12,18 +12,6 @@ public abstract class JsonUtil {
 	public static GsonConverterFactory createGsonConverterFactory() {
 		return GsonConverterFactory.create(createGson());
 	}
-	
-	protected String json(final Object object){
-		return JsonUtil.asJson(object);
-	}
-	
-	public static <T> T asObject(String json, Class<T> clazz) {
-		return createGson().fromJson(json, clazz);
-	}
-
-	public static <T> String asJson(T object) {
-		return createGson().toJson(object);
-	}
 
 	private static Gson createGson() {
 		return new GsonBuilder().excludeFieldsWithoutExposeAnnotation()
