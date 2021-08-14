@@ -24,9 +24,29 @@ Foram criados dois endpoints, com o mesmo corpo de requisição.
 
 ###### Cotação de hotel específico:
 ```
-/quotation/hotel/new/{hotel_id}
+GET - /quotation/hotel/new/{hotel_id}
 ```
 ###### Cotação de todos os hotéis de uma cidade:
 ```
-/quotation/city/new/{city_id}
+GET - /quotation/city/new/{city_id}
+```
+
+#### Retorno esperado:
+```
+{
+    "id": 5,
+    "city": "São Paulo",
+    "name": "Hotel Teste 5",
+    "rooms": [
+        {
+            "id": 0,
+            "categoryName": "Standard",
+            "priceDetail": {
+                "totalPrice": 11293.928571428572,
+                "pricePerDayAdult": 720.79,
+                "pricePerDayChild": 860.36
+            }
+        }
+    ]
+}
 ```
