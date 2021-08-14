@@ -32,7 +32,7 @@ public class PriceDetail {
 	
 	private double caculateTotalPrice(final QuotationOrderDTO quotation, final RoomDTO room) { 
 		int qtdDays = Period.between(quotation.getCheckInDate(), quotation.getCheckOutDate()).getDays();
-		return Math.round((calculateAdultPrice(quotation, room, qtdDays) + calculateChildPrice(quotation, room, qtdDays))/0.7); 
+		return (calculateAdultPrice(quotation, room, qtdDays) + calculateChildPrice(quotation, room, qtdDays))/0.7; 
 	}
 
 	private double calculateChildPrice(final QuotationOrderDTO quotation, final RoomDTO room, int qtdDays) {
